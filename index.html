@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Kipchumba Kiplangat — Freelance Full-Stack Developer</title>
+<meta name="description" content="David Kiplangat builds fast, reliable web products for startups and teams that ship. Available for freelance web & software development work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">&lt;David/&gt;</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-small">Start a project</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="status-pill">
+          <span class="dot"></span> Available for new projects — Q3 2026
+        </div>
+        <h1 class="hero-title">
+          I build fast, reliable <span class="highlight">web products</span> for teams that ship.
+        </h1>
+        <p class="hero-sub">
+          Freelance full-stack developer specializing in React, Node.js, and cloud infrastructure.
+          I partner with founders and product teams to turn ideas into production-ready software —
+          without the agency overhead.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="48">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="98">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Client satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="editor-window">
+          <div class="editor-titlebar">
+            <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+            <span class="editor-filename">profile.js</span>
+          </div>
+          <pre class="editor-body"><code id="typedCode"></code><span class="cursor" id="cursor">&nbsp;</span></pre>
+        </div>
+        <div class="editor-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOGOS / TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <p class="trust-label">Trusted by teams building in</p>
+    <div class="trust-tags">
+      <span>Fintech</span><span>·</span><span>SaaS</span><span>·</span><span>E-commerce</span><span>·</span><span>Healthtech</span><span>·</span><span>Logistics</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="eyebrow">// about</span>
+      <h2>Someone you can hand a hard problem to.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm David Kipchumba — a freelance full-stack developer based remotely, working with clients across
+          time zones. Over the last six years I've helped early-stage startups ship their first product
+          and helped growing teams untangle systems that had outgrown their original design.
+        </p>
+        <p>
+          I care about code that's still easy to read a year later, and about giving clients a clear
+          view of progress at every stage — no black boxes, no surprise rewrites.
+        </p>
+        <div class="tag-cloud">
+          <span class="tag">JavaScript / TypeScript</span>
+          <span class="tag">React & Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">AWS & Docker</span>
+          <span class="tag">REST & GraphQL APIs</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Stripe & Payments</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-row"><span>Based in</span><strong>Remote — GMT-5</strong></div>
+        <div class="about-card-row"><span>Response time</span><strong>&lt; 24 hours</strong></div>
+        <div class="about-card-row"><span>Engagement</span><strong>Project or retainer</strong></div>
+        <div class="about-card-row"><span>Rate</span><strong>Quoted per scope</strong></div>
+        <a href="#contact" class="btn btn-primary btn-full">Check availability</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <span class="eyebrow">// services</span>
+      <h2>What I can build for you</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 4L2 12L8 20M16 4L22 12L16 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Web App Development</h3>
+        <p>End-to-end builds with React or Next.js on the front end and Node.js on the back — from first commit to production deploy.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6H20M4 12H20M4 18H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>APIs & Backend Systems</h3>
+        <p>Designing and building REST or GraphQL APIs, database schemas, and integrations that stay stable as you scale.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Performance & DevOps</h3>
+        <p>Speeding up slow apps, setting up CI/CD pipelines, and getting your infrastructure on solid, monitored ground.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Code Review & Consulting</h3>
+        <p>A second pair of senior eyes on your codebase, architecture decisions, or technical hiring process.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <span class="eyebrow">// selected work</span>
+      <h2>Recent projects</h2>
+    </div>
+    <div class="work-grid">
+
+      <article class="work-card">
+        <div class="work-thumb thumb-1" aria-hidden="true"></div>
+        <div class="work-body">
+          <div class="work-tags"><span>React</span><span>Node.js</span><span>Stripe</span></div>
+          <h3>Ledgerly — Invoicing Platform</h3>
+          <p>Rebuilt a legacy invoicing tool into a fast SaaS product, cutting page load times by 70% and adding automated payment reminders.</p>
+          <a href="#" class="work-link">View case study →</a>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-thumb thumb-2" aria-hidden="true"></div>
+        <div class="work-body">
+          <div class="work-tags"><span>Next.js</span><span>PostgreSQL</span><span>AWS</span></div>
+          <h3>Northbound — Logistics Dashboard</h3>
+          <p>Built a real-time fleet tracking dashboard handling 10k+ location updates a minute for a mid-size logistics operator.</p>
+          <a href="#" class="work-link">View case study →</a>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-thumb thumb-3" aria-hidden="true"></div>
+        <div class="work-body">
+          <div class="work-tags"><span>GraphQL</span><span>React Native</span><span>Docker</span></div>
+          <h3>Fernway — Patient Booking App</h3>
+          <p>Shipped a HIPAA-conscious booking app for a healthtech startup's first public launch, from prototype to App Store.</p>
+          <a href="#" class="work-link">View case study →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ PROCESS (git log style) ============ -->
+  <section class="process" id="process">
+    <div class="section-head">
+      <span class="eyebrow">// how we'll work together</span>
+      <h2>The process, commit by commit</h2>
+    </div>
+    <div class="git-log">
+
+      <div class="commit">
+        <div class="commit-marker"><span class="hash">a1c9f2e</span></div>
+        <div class="commit-body">
+          <h3>Discover</h3>
+          <p>A short call to understand your goals, constraints, and what "done" looks like. You get a written scope and timeline.</p>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-marker"><span class="hash">7e0d41b</span></div>
+        <div class="commit-body">
+          <h3>Plan the architecture</h3>
+          <p>I map out the technical approach — data model, stack, integrations — and flag risks before any code is written.</p>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-marker"><span class="hash">3f88ac0</span></div>
+        <div class="commit-body">
+          <h3>Build in the open</h3>
+          <p>Work happens in short cycles with a staging link you can check anytime. Weekly async updates, no surprises.</p>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-marker"><span class="hash">c52e9d7</span></div>
+        <div class="commit-body">
+          <h3>Ship</h3>
+          <p>Deployed, tested, and documented — including a walkthrough so your team knows exactly how it works.</p>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-marker"><span class="hash">f019bb4</span></div>
+        <div class="commit-body">
+          <h3>Support</h3>
+          <p>Two weeks of post-launch support included, with retainer options if you want an ongoing hand on the codebase.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="section-head">
+      <span class="eyebrow">// what clients say</span>
+      <h2>Feedback from the field</h2>
+    </div>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial">
+        <p>"David took a vague idea and had a working prototype in two weeks. Communication was clear the entire way through."</p>
+        <footer><strong>Priya Nandakumar</strong><span>Founder, Ledgerly</span></footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"We brought David in to fix performance issues our own team couldn't crack. Load times dropped within the first week."</p>
+        <footer><strong>Marco Vellani</strong><span>CTO, Northbound Logistics</span></footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Genuinely one of the smoothest contractor engagements we've had — scoped well, delivered on time, documented properly."</p>
+        <footer><strong>Dana Whitfield</strong><span>Product Lead, Fernway</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-copy">
+        <span class="eyebrow">// contact</span>
+        <h2>Have a project in mind?</h2>
+        <p>Tell me a bit about what you're building. I read every message and reply within a day.</p>
+        <div class="contact-direct">
+          <a href="EMAIL">davidkipchumba07@gmail.com</a>
+          <div class="socials">
+            <a href="#" aria-label="GitHub">https://github.com/davidkipchumba07-hub</a>
+            <a href="#" aria-label="LinkedIn">www.linkedin.com/in/david-kipchumba-094b54326</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+        </div>
+        <div class="form-row">
+          <label for="budget">Estimated budget</label>
+          <select id="budget" name="budget">
+            <option value="">Select a range</option>
+            <option value="small">Under $5,000</option>
+            <option value="medium">$5,000 – $15,000</option>
+            <option value="large">$15,000 – $40,000</option>
+            <option value="enterprise">$40,000+</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" placeholder="What are you building?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&lt;David/&gt; David Kipchumba — Freelance Developer</span>
+    <span>© 2026. Built with HTML, CSS & JS.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -183,7 +183,7 @@ form.addEventListener('submit', (e) => {
   })
   .then(response => {
     if (response.ok) {
-      showStatus(`Thanks, ${name.split(' ')[0]}! Your message has been sent successfully.`, false);
+      showStatus(`Thanks, ${name}! Your message has been sent successfully.`, false);
       form.reset();
     } else {
       showStatus('Oops! There was a problem submitting your form.', true);

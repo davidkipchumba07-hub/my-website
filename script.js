@@ -171,11 +171,27 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  // No backend is connected in this template.
-  // Replace this block with a fetch() call to your form endpoint
-  // (e.g. Formspree, Netlify Forms, or your own API) to send real messages.
-  showStatus(`Thanks, ${name.split(' ')[0]} — this is a front-end demo, so wire up a form endpoint to receive messages.`, false);
-  form.reset();
+ // Send data to Formspree backend
+  showStatus('Sending message...', false);
+  
+  fetch('https://formspree.io/f/xjgnbqqe', {
+    method: 'POST',
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      showStatus(`Thanks, ${name.split(' ')[0]}! Your message has been sent successfully.`, false);
+      form.reset();
+    } else {
+      showStatus('Oops! There was a problem submitting your form.', true);
+    }
+  })
+  .catch(error => {
+    showStatus('Oops! There was a problem connecting to the server.', true);
+  });
 });
 
 function showStatus(text, isError) {
